@@ -1,0 +1,541 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.col-lg-4{
+    padding: 0;
+}
+html{
+    width: 100%;
+    scroll-behavior: smooth; 
+}
+/* .container-fluid{
+    width: 100% !important;
+    padding: 0;
+} */
+#nav{
+    background-color: #22272e;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    transition: 0.4s;
+    padding: 15px;
+}
+.nav-link{
+    color: white;
+    text-transform: uppercase;
+    margin-right: 15px;
+}
+.nav-link:hover{
+    color: #da4901;
+    transition: 0.4s;
+}
+
+/**** ANIMATED TEXT *****/
+
+/**** ANIMATED TEXT *****/
+
+/************ SECTION 1 *******************/
+#section1{
+    width: 100%;
+    height: 700px;
+    background-image: url("../images/banner1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.txtsec1{
+    padding-top: 200px;
+}
+.txtsec1 #p1{
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.txtsec1 #p2{
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+}
+.txtsec1 span{
+    color: #da4901;
+}
+/************ SECTION 1 *******************/
+/************ SERVICE *************/
+#service{
+    background-color: #22272e;
+}
+.containServ{
+    margin-bottom: 100px;
+}
+.title{
+    font-size: 60px;
+    color: #da4901;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0;
+    padding-top: 50px;
+    text-transform: uppercase;
+}
+.sousTitre{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+.hrTitle{
+    border: #797777 2px solid;
+    border-radius: 50px;
+    width: 10%;
+    margin-bottom: 0;
+}
+.allService{
+    margin-top: 80px;
+}
+
+.divService{
+    width: 60%;
+    margin-left:120px;
+    margin-bottom: 50px;
+}
+.serviceTitle{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.hrService{
+    width: 10%;
+    border: #797777 2px solid;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.txtservice{
+    color: #797777;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+#contactService{
+    text-decoration: none;
+}
+#contactService span:hover{
+    color: #923405;
+}
+/* .colserv{
+    padding: 0 !important;
+    width: 45% !important;
+} */
+/************ SERVICE *************/
+/************ COMPETENCES *************/
+#competence{
+    /* background-color: white; */
+}
+.title2{
+    font-size: 60px;
+    color: #22272e;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0;
+    padding-top: 50px;
+    text-transform: uppercase;
+}
+
+.divCompImg{
+    display: flex;
+    justify-content: center;
+}
+.sousTitre2{
+    text-align: center;
+    color: #22272e;
+    font-size: 40px;
+}
+.hrTitle2{
+    border: #797777 2px solid;
+    border-radius: 50px;
+    width: 10%;
+    margin-bottom: 0;
+}
+.divComp{
+    margin-top: 80px;
+}
+.divComp2{
+    margin-left: 80px;
+}
+.titleComp{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.sousTitleComp{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.txtComp{
+    font-size: 17px;
+    color: #da4901;
+    text-transform: uppercase;
+}
+.ulComp{
+    list-style-type: circle;
+    margin-bottom: 100px;
+}
+/************ COMPETENCES *************/
+/************ IMGSECTION1 *************/
+.imgSection{
+    width: 100%;
+    height: 300px;
+    background-image: url("../images/imgsec.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+#titleSection{
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+    padding-top: 100px;
+}
+/************ IMGSECTION1 *************/
+/************ PORTFOLIO *************/
+#folio{
+    background-color: #22272e;
+}
+#allProjects{
+    margin-top: 80px;
+    padding-bottom: 80px;
+}
+.project{
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.projet_image{
+    width: 100%;
+    height: 380px;
+    border-radius: 15px;
+}
+.project h2{
+    color: white;
+}
+
+.project .project_body{
+    color: black;
+    display: none;
+}
+.project_body{
+    overflow: hidden;
+}
+.portfolio{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 50px;
+    grid-auto-flow: row dense;
+}
+.js-body{
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 18px;
+}
+#voir{
+    color: #da4901;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 640px){
+    .portfolio{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .project_body{
+        grid-column: span 2;
+    }
+}
+
+
+/************ PORTFOLIO *************/
+/************ COMMENT *************/
+.comment{
+    width: 20%;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 100px;
+    padding: 20px;
+    box-shadow:  10px 5px 5px rgba(0, 0, 0, 0.774);
+}
+.comment p{
+    font-size: 17px;
+}
+#divComment{
+    padding: 40px;
+    justify-content: center;
+}
+/************ COMMENT *************/
+/************ ABOUT *************/
+.imgAbout{
+    border-radius: 15px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.555);
+}
+.divAbout2{
+    display: flex;
+    justify-content: center;
+}
+.divAbout{
+    width: 60%;
+    margin-left:120px;
+    margin-bottom: 100px;
+}
+.titleAbout{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.pAbout{
+    color: #797777;
+    font-size: 19px;
+}
+/************ ABOUT *************/
+/************ CONTACT *************/
+#contact{
+    background-color: #22272e;
+}
+.idea{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.idea2{
+    border: white 2px solid;
+    width: 65%;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.idea2 p{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+    padding: 25px;
+    margin: 0;
+}
+.idea2 p span{
+    color: #da4901;
+    font-weight: bold;
+}
+.txtContact{
+    display: flex;
+    justify-content: center;
+}
+#txtContact2{
+    text-align: left;
+    width: 60%;
+}
+.titleContact{
+    color: #da4901;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+.sTitleContact{
+    color: #797777;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.hrContact{
+    width: 60%;
+    border: #797777 1px solid;
+    margin-top: 10px;
+    margin-left: 0;
+}
+.btnContact{
+    background-color: #da4901;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+.btnContact:hover{
+    background-color: #a33904;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.check{
+    color: white;
+    font-size: 12px;
+}
+/************ CONTACT *************/
+/************ PREFOOT *************/
+#preFoot{
+    width: 100%;
+    height: 50px;
+    background-color: #323436;
+    display: flex;
+}
+#link{
+    margin-left: auto;
+    margin-right: 25px;
+    margin-top: 10px;
+    color: white;
+}
+#link:hover{
+    color: #da4901;
+    transition: 0.4s;
+}
+/************ PREFOOT *************/
+/************ FOOTER *************/
+#footer{
+    width: 100%;
+    height: 80px;
+    background-color: #22272e;
+    display: flex;
+    justify-content: left;
+}
+#footer .nav-link{
+    margin-bottom: 0;
+}
+/************ FOOTER *************/
+
+@media (max-width: 640px){
+    /*** NAVBAR ***/
+    .navbar{
+        padding: 0 !important;
+    }
+    #burger{
+        padding: 0 !important;
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+    /*** NAVBAR ***/
+    .txtsec1{
+        padding-top: 250px;
+    }
+    .txtsec1 #p1{
+        font-size: 45px;
+        margin-bottom: 15px;
+    }
+    .txtsec1 #p2{
+        font-size: 45px;
+    }
+    .title{
+        font-size: 35px;
+    }
+    .hrTitle{
+        width: 40%;
+    }
+    .sousTitre{
+        font-size: 30px;
+    }
+    .title2{
+        font-size: 15px;
+    }
+    .imgAbout{
+        display: none;
+    }
+
+    /***** SERVICE ****/
+    #responsive{
+        padding-right: 30px;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+    .divService{
+        width: 100%;
+        margin-bottom: 50px;
+        margin-left: 0 !important;
+    }
+    .prestation{
+        margin-bottom: 0 !important;
+    }
+    .txtservice{
+        margin-left: 30px !important;
+    }
+    .idea{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+    .idea2{
+        width: 100%;
+    }
+    .idea2 p{
+        font-size: 24px;
+    }
+    /***** SERVICE ****/
+    /***** SECTION ****/
+    .imgSection{
+        text-align: center;
+    }
+    #titleSection{
+        font-size: 35px;
+    }
+    /***** SECTION ****/
+    /***** COMPETENCE ****/
+    .title2{
+        font-size: 35px;
+    }
+    .sousTitre2{
+        font-size: 30px;
+    }
+    .divComp2{
+        margin-left: 0;
+    }
+    .titleComp{
+        text-align: center;
+        font-size: 17px;
+    }
+    .ulComp{
+        padding-left: 20px;
+        margin-left: 15px;
+    }
+    .imgComp{
+        display: none;
+    }
+    .hrTitle2{
+        width: 40%;
+    }
+    /***** COMPETENCE ****/
+    /***** PORTFOLIO ****/
+    .projet_image{
+        height: 280px;
+    }
+    /***** PORTFOLIO ****/
+    /***** ABOUT ****/
+    /* .divAbout2{
+        display: flex;
+        justify-content: right;
+    } */
+    .divAbout{
+        width: 95%;
+        margin-left: 0;
+    }
+    .titleAbout{
+        font-size: 18px;
+    }
+    /***** ABOUT ****/
+    /***** CONTACT ****/
+    #txtContact2{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .hrContact{
+        width: 100%;
+        border: #797777 1px solid;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .btnContact{
+        margin-bottom: 40px;
+    }
+    /***** CONTACT ****/
+
+}

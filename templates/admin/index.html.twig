@@ -1,0 +1,47 @@
+{% extends 'base_admin.html.twig' %}
+
+{% block title %}Administration{% endblock %}
+
+{% block body %}
+{% for message in app.flashes('success') %}
+<div class="container alert alert-success text-center mt-3">
+    {{message}}
+</div>
+{% endfor %}
+<div class="container">
+    <h1 class="text-center text-uppercase my-5 lol">Mes projets</h1>
+    <div class="my-3">
+        <a href="{{path('createProject')}}" class="btn btn-info">Ajoutez un Projet</a>
+        <a href="{{path('admin_logout')}}" class="btn btn-danger">Deconexion</a>
+    </div>
+    <div class="card p-3">
+        <table class="table table-hover text-center">
+            <tr class="table-primary">
+                <td>Titre</td>
+                <td>Client</td>
+                <td>Ajouter le</td>
+                <td>Actions</td>
+            </tr>
+            {% for p in projet %}
+                <tr>
+                    <td><a id="aCat" href=""><strong class="text-uppercase">{{p.name}}</strong></a></td>
+                    <td><a id="aCat" href=""><strong class="text-uppercase">{{p.client}}</strong></a></td>
+                    <td><a id="aCat" href=""><strong class="text-uppercase">{{p.createdAt | date('d/m/Y')}}</strong></a></td>
+                    <td>
+                        <a  href="{{path('modifProject',{'id': p.id})}}" class="btn btn-info"><i class="fas fa-edit"></i></a>
+                        <form method="POST" style="display:inline-block" action="{{path('supProjet',{'id': p.id})}}">
+                            <button type="submit" class="btn btn-danger"
+                                onclick="return confirm('Confirmer la suppresion de la catégorie')">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                            <input type="hidden" name="_method" value="delete">
+                            <input type="hidden" name="_token" value="{{csrf_token('SUP' ~ p.id)}}">
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,311 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Bienvenue !{% endblock %}
+
+{% block body %}
+    <div id="section1">
+        <div class="text-center txtsec1">
+            <h1 class="animated-text" id="p1">Tristan Marest</h1>
+            <p class="animated-text" id="p2">Développeur web <span>indépendant</span></p>
+        </div>
+    </div>
+
+
+    <div id="service">
+        <div>
+            <p class="title">Mes services</p>
+            <p class="sousTitre">Créations sur mesure</p>
+            <hr class="hrTitle">
+        </div>
+        <div class="container-fluid">
+            <div class="row allService">
+                <div class="col-lg-4 serviceResponsive">
+                    <div class="divService">
+                        <p class="serviceTitle">Conception de sites vitrine</p>
+                        <hr class="hrService">
+                        <p class="txtservice">
+                            Conception de sites vitrines pour mettre en valeur votre activité, pour professionnels et
+                            particuliers.
+                        </p>
+                    </div>
+                    <div class="divService">
+                        <p class="serviceTitle">Développement Dynamique</p>
+                        <hr class="hrService">
+                        <p class="txtservice">
+                            Intégration dynamique permettant d'ajouter à votre site ou application toute une panoplie
+                            d'outils entièrement personnalisables, administration implémentation de bases de données...
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 serviceResponsive">
+                    <img src="/images/responsive.png" alt="responsive" id="responsive" class="img-fluid">
+                </div>
+                <div class="col-lg-4 colserv">
+                    <div class="divService">
+                        <p class="serviceTitle">Développement spécifique</p>
+                        <hr class="hrService">
+                        <p class="txtservice">
+                            Des outils adaptés à votre coeur de métier,
+                            applications et solutions personnalisées.
+                        </p>
+                    </div>
+                    <div class="divService">
+                        <p class="serviceTitle">Responsive design</p>
+                        <hr class="hrService">
+                        <p class="txtservice">
+                            Travail sur la compatibilité tous supports, tablettes smartphones et écrans larges. <br> Afin
+                            d'obtenir une visibilité maximale.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-5 prestation">
+                <p class="sousTitre">Préstations de services</p>
+                <hr class="hrTitle">
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 mt-5 d-flex">
+                        <div class="divService ml-auto">
+                            <p class="serviceTitle">Formation/cours</p>
+                            <hr class="hrService">
+                            <p class="txtservice">
+                                cours et formations dédiés à l'apprentissage ou la découverte de l'informatique général,
+                                ou la réalisation d'une mise à niveau (entrepises ou particulier).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-5 d-flex">
+                        <div class="divService ml-5">
+                            <p class="serviceTitle">Dépannage et installations diverses</p>
+                            <hr class="hrService">
+                            <p class="txtservice">
+                                Assistance informatique a distance ou en présentiel, pour tous types de dépannages ou installations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="idea">
+                <div class="idea2">
+                    <p>n'hésitez pas a me <a href="#contact" id="contactService"><span>contacter</span></a> et exposer
+                        votre besoin !</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="imgSection">
+        <p id="titleSection">"Une passion au coeur de vos projets"</p>
+    </div>
+
+
+    <div id="competence">
+        <div>
+            <p class="title2">Compétences</p>
+            <p class="sousTitre2">Des compétences à votre service</p>
+            <hr class="hrTitle2">
+        </div>
+        <div class="container-fluid">
+            <div class="row divComp">
+                <div class="col-lg-4">
+                    <div class="divComp2">
+                        <p class="titleComp">Domaine de compétences</p>
+                        <ul class="mt-5 ulComp">
+                            <li>
+                                <p class="sousTitleComp">intégration html / css</p>
+                                <p class="txtComp">Utilisation des bonnes pratique du web</p>
+                            </li>
+                            <li>
+                                <p class="sousTitleComp">conception multi-plateformes</p>
+                                <p class="txtComp">Compatible tous supports, tablette et application mobile</p>
+                            </li>
+                            <li>
+                                <p class="sousTitleComp">application spécifique et interface d'administration</p>
+                                <p class="txtComp">php - symfony - mysql - ajax</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="divCompImg">
+                        <img src="/images/1.png" alt="competence" class="img-fluid imgComp">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div>
+                        <p class="titleComp">compétences en développement</p>
+                        <ul class="mt-5 ulComp">
+                            <li>
+                                <p class="sousTitleComp">Langages de programmations et frameworks</p>
+                                <p class="txtComp">PHP - SYMFONY</p>
+                            </li>
+                            <li>
+                                <p class="sousTitleComp">Compétences base de données</p>
+                                <p class="txtComp">SQL - MYSQL</p>
+                            </li>
+                            <li>
+                                <p class="sousTitleComp">Langages front-end</p>
+                                <p class="txtComp">HMTL5 - CSS3 - JAVASCRIPT - JQUERY - SASS - BOOTSTRAP</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="folio">
+            <div>
+                <p class="title">portfolio</p>
+                <p class="sousTitre">Echantillon de projets réalisés</p>
+                <hr class="hrTitle">
+            </div>
+            <div class="container" id="allProjects">
+                <div class="portfolio" id="js-portfolio">
+                    {% for p in projet %}
+                        <div class="project js-item">
+                            <h2 class="projet_name">{{p.name}}</h2>
+                            {% for image in p.images %}
+                            <img src="/images/projets/{{image.name}}" alt="" class="projet_image img-fluid">
+                            {% endfor %}
+                            <p class="mt-2" id="voir">Voir plus</p> 
+                            <div class="project_body js-body">
+                                <p>{{p.name}}</p>
+                                <p>{{p.description}}</p>
+                                <p>Réalisé pour: {{p.client}}</p>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <div class="imgSection">
+            <p id="titleSection">"Un projet livré clef en main"</p>
+        </div>
+
+        <div class="container-fluid" id="about">
+            <div>
+                <p class="title2">a propos</p>
+                <p class="sousTitre2">Développeur web indépendant</p>
+                <hr class="hrTitle2">
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-4 divAbout2">
+                    <div class="divAbout">
+                        <p class="titleAbout">La passion du développement</p>
+                        <p class="pAbout">
+                            Passionné par le développement, il m'a fallu éffectuer un
+                            changement radical de carrière afin de pouvoir pleinement exploiter cette passion.
+                        </p>
+                        <p class="pAbout">
+                            Après une reconversion professionnelle et beaucoup de travail, je me suis lancé comme
+                            développeur web indépendant.
+                        </p>
+                        <p class="pAbout">
+                            Je peux aujourd'hui exercer ce métier en conciliant travail et plaisir !
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img src="/images/about.png" alt="about" class="img-fluid imgAbout ml-5">
+                </div>
+                <div class="col-lg-4 divAbout2">
+                    <div class="divAbout">
+                        <p class="titleAbout">Experience en développement</p>
+                        <p class="pAbout">
+                            Je suis aujourd'hui pret a affronter tous les défis technique qui se présentent.
+                            <p class="pAbout">
+                                Ayant effectué une formation professionnelle de qualité et reconnue, j'ai depuis le début
+                                de mon activitée travaillé sur des projets mettant en service une panoplie diverse de
+                                compétences.
+                            </p>
+                        </p>
+                        <p class="pAbout">
+                            Je mettrais donc le savoir acquit au service de tous vos projets web !
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="imgSection"></div>
+
+        <div id="contact">
+            <div>
+                <p class="title">contactez-moi</p>
+                <hr class="hrTitle">
+            </div>
+            <div class="idea">
+                <div class="idea2">
+                    <p>une idée ? un projet ? n'hésitez pas et <span>demander un devis</span> gratuit</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 d-flex txtContact">
+                        <div id="txtContact2">
+                            <p class="titleContact">adresse</p>
+                            <p class="sTitleContact">26 rue de la liberté 41110 Pouillé</p>
+                            <hr class="hrContact">
+                            <p class="titleContact">téléphone</p>
+                            <p class="sTitleContact">06.63.55.23.85</p>
+                            <hr class="hrContact">
+                            <p class="titleContact">mail</p>
+                            <p class="sTitleContact">marest.tristan@gmail.com</p>
+                            <hr class="hrContact">
+                            <p class="titleContact">ouverture</p>
+                            <p class="sTitleContact">lundi - vendredi <br> 9h00 - 18h00</p>
+                            <hr class="hrContact">
+                            <p class="titleContact">s.i.r.e.t</p>
+                            <p class="sTitleContact">888 513 231 00025</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        {% for message in app.flashes('success') %}
+                            <div class="alert alert-success text-center" style="width:100%">
+                                {{message}}
+                            </div>
+                        {% endfor %}
+                        {{form_start(form)}}
+                        {{form_row(form.mail)}}
+                        {{form_row(form.message)}}
+                        <div class="d-flex check">
+                            {{form_row(form.check)}}
+                            <label for="">
+                                En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées
+                                dans le cadre de la demande de contact et de la relation commerciale qui peut en
+                                découler.
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btnContact btn-block mt-2" id="btnContact">Envoyer</button>
+                        </div>
+                        {{form_end(form)}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="preFoot">
+            <a id="link" href="https://www.linkedin.com/in/tristan-marest-33835290/" target="blank"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+    </div>
+    {% include "partials/_mentions.html.twig" %}
+    {% endblock %}
+    {% block javascripts %}
+    <script>
+        window.onscroll = function () {
+            if (document.documentElement.scrollTop > 280) {
+                document.getElementById("nav").style.background = "#323436";
+                document.getElementById("nav").style.padding = "0px";
+
+            } else {
+                document.getElementById("nav").style.background = "#22272e";
+                document.getElementById("nav").style.padding = "15px";
+            }
+        }
+    </script>
+    {% endblock %}
